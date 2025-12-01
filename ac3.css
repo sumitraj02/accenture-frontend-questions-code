@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    font-family: Poppins, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg,#a8b6ff,#ebeaff);
+    height: 100vh;
+}
+
+.container {
+    width: 420px;
+    background: #ffffffaa;
+    padding: 40px;
+    text-align: center;
+    border-radius: 30px; /* MORE ROUNDED */
+    backdrop-filter: blur(8px); /* premium effect */
+    box-shadow: 0 0 35px rgba(0,0,0,0.2);
+}
+
+.progress-box {
+    width: 100%;
+    height: 45px;
+    background: #d7d6ffbf;
+    border-radius: 50px; /* PILLED CURVE */
+    overflow: hidden;
+    margin: 25px 0;
+    border: 3px solid #b6b1ff;
+}
+
+#progress-bar {
+    height: 100%;
+    width: 0%;
+    background: linear-gradient(90deg,#6f4bff,#8f72ff);
+    border-radius: 50px;
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 45px;
+    transition: width 0.25s ease-in-out;
+}
+
+button {
+    padding: 12px 28px;
+    font-size: 18px;
+    border: none;
+    border-radius: 22px; /* rounded button also */
+    background: #6b58ff;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.07);
+    background: #5643e9;
+}

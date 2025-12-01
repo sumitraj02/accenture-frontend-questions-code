@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    transition: 0.4s;
+    background: #ffffff;
+    color: #000;
+}
+
+.dark {
+    background: #1d1d1d;
+    color: #fff;
+}
+
+.container {
+    width: 420px;                 /* Required for rounded card look */
+    margin: 120px auto;
+    padding: 40px 30px;
+    background: rgba(255,255,255,0.4);
+    border-radius: 25px;          /* Perfect rounded quad-lateral shape */
+    box-shadow: 0px 0px 25px rgba(0,0,0,0.15);
+    transition: 0.4s;
+}
+
+.dark .container {
+    background: rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 30px rgba(255,255,255,0.15);
+}
+
+#toggle-btn {
+    margin-top: 30px;
+    padding: 12px 35px;
+    font-size: 22px;
+    border: none;
+    border-radius: 40px;  /* round button */
+    cursor: pointer;
+    background: #6b4eff;
+    color: white;
+    transition: 0.3s;
+}
+
+#toggle-btn:hover {
+    transform: scale(1.08);
+}

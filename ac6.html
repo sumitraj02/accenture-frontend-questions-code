@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+/* Buttons Style */
+button {
+  padding: 12px 28px;
+  margin: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  border: none;
+}
+
+/* Requirement: NEXT button should be pink */
+#next {
+  background-color: pink;
+}
+
+/* Other buttons (optional styling) */
+#prev { background-color: lightblue; }
+#play { background-color: lightgreen; }
+#pause { background-color: orange; }
+
+/* Output text box */
+#display {
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: bold;
+}
+</style>
+</head>
+
+<body>
+
+<h2>iPod Controller</h2>
+
+<!-- Buttons Required -->
+<button id="next" onclick="showText('Next Clicked')">Next</button>
+<button id="prev" onclick="showText('Previous Clicked')">Prev</button>
+<button id="play" onclick="showText('Play Clicked')">Play</button>
+<button id="pause" onclick="showText('Pause Clicked')">Pause</button>
+
+<!-- Output Text -->
+<p id="display"></p>
+
+
+<script>
+// Required function: show text when a button is clicked
+function showText(text){
+  document.getElementById("display").innerText = text;
+}
+</script>
+
+</body>
+</html>
